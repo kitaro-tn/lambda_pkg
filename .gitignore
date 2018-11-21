@@ -20,3 +20,5 @@ coverage.xml
 *,cover
 .hypothesis/
 msgiver.egg-info/
+
+Pipfile.lock

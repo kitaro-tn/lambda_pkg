@@ -41,7 +41,7 @@ PEP8
 
 ::
 
-    $ pep8 msgiver
+    $ pep8 lambda_deploy
 
 Watcher
 ~~~~~~~
@@ -53,7 +53,7 @@ Watcher
 Issues
 ------
 
--  https://github.com/kitaro-tn/msgiver/issues
+-  https://github.com/kitaro-tn/lambda_deploy/issues
 
-.. |Build Status| image:: https://travis-ci.org/kitaro-tn/msgiver.svg?branch=master
-   :target: https://travis-ci.org/kitaro-tn/msgiver
+.. |Build Status| image:: https://travis-ci.org/kitaro-tn/lambda_deploy.svg?branch=master
+   :target: https://travis-ci.org/kitaro-tn/lambda_deploy

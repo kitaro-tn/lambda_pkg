@@ -54,7 +54,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(message)s',
                         datefmt='%Y-%m-%d%H:%M:%S')
-    path = current_path() + "/msgiver"
+    path = current_path() + "/lambda_deploy"
     test_path = current_path() + "/tests"
     event_handler = CIHandler(path)
     test_event_handler = CIHandler(test_path)

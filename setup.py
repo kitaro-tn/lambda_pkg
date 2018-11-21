@@ -5,14 +5,14 @@
 
 
 """
-setup script for lambda_pkg
+setup script for lambda_deploy
 """
 
 from pip.req import parse_requirements
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath("lambda_pkg"))
+sys.path.insert(0, os.path.abspath("lambda_deploy"))
 import msgiver
 
 try:
@@ -43,12 +43,12 @@ with open("README.rst") as readme_file:
 #         sys.ext(3)
 
 setup(
-        name="lambda_pkg",
+        name="lambda_deploy",
         version="0.0.1",
-        url="https://github.com/kitaro-tn/lambda_pkg",
+        url="https://github.com/kitaro-tn/lambda_deploy",
         scripts=["bin/msgiver"],
         license="MIT",
-        test_suite="lambda_pkg",
+        test_suite="lambda_deploy",
         author="Tatsunori Nishikori",
         author_email="tora.1986.tatsu@gmail.com",
         description="AWS lambda package generation.",

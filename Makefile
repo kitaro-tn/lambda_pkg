@@ -10,7 +10,7 @@
 
 PWD = $(shell pwd)
 OS = $(shell uname -s)
-NAME = lambda_pkg
+NAME = lambda_deploy
 PYTHON_VERSION = $(python --version)
 
 test:
@@ -27,6 +27,8 @@ upload-pkg:
 
 install: clean
 	@echo "Install $(NAME)"
+	pipenv install
+	pipenv lock -r > requirements.txt
 	python setup.py install
 	@echo "Complete installed $(NAME)"
 
@@ -49,7 +51,8 @@ clean:
 
 develop:
 	@echo "Development $(NAME) project"
-	pip install -r requirements/dev.txt
+	pip install pipenv
+	pipenv install
 	@echo "This project document is <https://github.com/kitaro-tn/$(NAME)/blob/master/README.md>"
 
 watch:
