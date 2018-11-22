@@ -46,7 +46,7 @@ setup(
         name="lambda_deploy",
         version="0.0.1",
         url="https://github.com/kitaro-tn/lambda_deploy",
-        scripts=["bin/msgiver"],
+        scripts=["bin/lambda_deploy"],
         license="MIT",
         test_suite="lambda_deploy",
         author="Tatsunori Nishikori",

@@ -14,7 +14,8 @@ NAME = lambda_deploy
 PYTHON_VERSION = $(python --version)
 
 test:
-	python -m unittest tests
+	# python -m unittest tests
+	pipenv run pytest
 
 build-pkg: clean
 	@echo "Build to setup.py"

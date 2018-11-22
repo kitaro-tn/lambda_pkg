@@ -19,6 +19,6 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
-msgiver.egg-info/
+lambda_deploy.egg-info/
 
 Pipfile.lock
